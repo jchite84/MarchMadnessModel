@@ -1,6 +1,16 @@
 # MarchMadnessModel
 Scraper and Predictive Model Built for March Madness Bracket
 
+## Data Contents
+- MadnessScrape.py: Webscraper used to generate raw data
+- MarchMadnessData.spydata: data snapshot from python scrape
+- DataModel.xlsx: data mapping tables and additional information for potential future modeling
+- MarchMadnessFullData-Clean.csv: cleaned data produced by manipulation of raw data from python by DataModel.xlsx
+- MadnessAnalysis.R: script for second level cleaning, plus model building, and deployment
+- MadnessAnalysisData.RData: workspace from RScript
+- DivIWide_1.csv and DivIWide_2.csv: csv files created by third level of cleaning in Excel before modeling is done in R
+- MarchMadness.rattle: model created with the Rattle Package in R. Can be used to score model as an alternative to using the scoring functions
+
 ## Data
 
 Data has been scraped from Sports-Reference.com using the python script MadnessScrape.py. The following fields were scraped for each game of each Division I team through February 26th, 2019.

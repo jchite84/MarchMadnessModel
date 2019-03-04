@@ -28,7 +28,9 @@ Data has been scraped from Sports-Reference.com using the python script MadnessS
 Opponent data was scraped with THAT team listed as "Home Team". This avoided duplicated data, and made it easier to generate game scenarios that did not actually happen in the year. 
 
 ### Data Cleaning
-Data was pulled into R for cleaning. Games were matched on Home_Team and Opponent Team name and Home_Team_Pts with Opp_Pts. Matching games were then indexed with the same Game_Index number. This process was imperfect, but it removed games against Division II teams. Games that could not be indexed were removed. This reduced the total number of games in the training data to 3,388 unique games (of ~4500 total games for the season).
+Intial data cleaning was done in Excel. The Data Model spreadsheet was used to replace the Oppenent Team column with the URL naming standard. This allowed for proper matching of games in subsequent steps. 
+
+Data was pulled into R for additional cleaning. Games were matched on Home_Team and Opponent Team name and Home_Team_Pts with Opp_Pts. Matching games were then indexed with the same Game_Index number. This process was imperfect, but it removed games against Division II teams. Games that could not be indexed were removed. This reduced the total number of games in the training data to 3,388 unique games (of ~4500 total games for the season).
 
 This long data format was exported into Excel where "Wide" data was created. Indexed games were matched and new columns generated with home team stats and opponent stats in one row. Two data sets were created. Each contain all games but with the reciporical teams listed as "Home Team" and "Opponent". This wide data was then reimported into R. 
 
